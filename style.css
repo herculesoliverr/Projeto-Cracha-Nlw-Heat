@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+}
+
+html,
+body {
+  --grey: hsl(240, 9%, 89%);
+  --black: hsl(240, 6%, 13%);
+  height: 100%;
+  font-family: 'roboto', sans-serif;
+  -webkit-flow-smoothing: antialiased;
+}
+body {
+  display: grid;
+  place-items: center;
+}
+
+main {
+  background: url(images/background.svg);
+  width: 375px;
+  height: 812px;
+  color: var(--grey);
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+}
+
+.perfil {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+  position: relative;
+}
+
+.perfil span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+.perfil > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.qrcode {
+  margin: 2rem auto 0;  
+  height: 9.5rem;
+  justify-content: center;
+  transition: all .5s ease;
+}
+
+.qrcode:hover {
+  transform: scale(1.1)
+}
+
+.centerSocial {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.contentSocial {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 0.9rem 0.4rem;
+  transition: all .5s ease;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentSocial:hover{
+  background-color: #3b3b3c;
+  transform: scale(1.2);
+}
+
+.buttonInsta {
+  font-size: 1.5rem;
+}
+
+.contentLinkedin:hover{
+  background-color: #3b3b3c;
+  transform: scale(1.2);
+}
+
+.buttonLinkedin{
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+a {
+  color: var(--grey);
+  text-decoration: none;
+  margin-top: 0.25rem;
+}
+
+p{
+  margin-top: 1rem;
+}
